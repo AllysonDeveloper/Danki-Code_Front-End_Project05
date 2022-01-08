@@ -1,0 +1,828 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+html,body{
+    height: 100%;
+}
+
+.content{
+    min-height: 85vh;
+    border-top: 2px solid #F22929;
+    border-bottom: 2px solid #F22929;;
+}
+
+/*Classes gerais*/
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+/****/
+/*Estilização do header*/
+header{
+    width: 100%;
+    padding: 20px 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-bars{
+    display: none !important;
+}
+
+.img-logo{
+    width: 30%;
+    max-width: 150px;
+}
+
+.img-logo img{
+    max-width: 100%;
+}
+
+nav ul{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 10px;
+}
+
+.menu-mobile{
+    display: none
+}
+
+/****/
+/*Estilização da seção de banner*/
+.banner{
+    display: inline-block;
+    width: 100%;
+    padding: 130px 100px;
+    background-color: black; 
+    background-image: url("../imagens/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+}
+
+.banner ul{
+    display: block;
+    list-style: none;
+}
+
+.banner ul li{
+    width: max-content;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #F22929;
+    margin-bottom: 10px;
+    font-size: 28px;
+    transform: skew(-10deg);
+}
+
+.banner ul li:nth-of-type(4){
+    background-color: white;
+    font-size: 18px;
+    color: black;
+    margin-top: 15px !important;
+}
+.banner ul li:nth-of-type(3){
+    margin-left: 12px;
+}
+.banner ul li:nth-of-type(2){
+    margin-left: 24px;
+}
+.banner ul li:nth-of-type(1){
+    margin-left: 36px;
+}
+/****/
+/*Estilização da Seção de Destaques*/
+.destaques{
+    width: 100%;
+}
+
+.titulo{
+    width: 100%;
+    padding: 40px 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo h1{
+    text-transform: uppercase;
+    color: black;
+    margin: 0 20px;
+    font-style: italic;
+}
+
+.traco{
+    width: 30%;
+    height: 3px;
+    background-color: black;
+}
+
+.destaque-conteiner{
+   width: 100%;
+   padding: 0 80px;
+    padding-bottom: 80px;
+   justify-content: center;
+}
+
+.destaque-single{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    font-style: italic;
+}
+.destaque-img{
+    padding-top: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.destaque-single h4{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.destaque-single h5{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.botao{
+    width: max-content;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: #F22929;
+    border-top: 3px solid #fc6565;
+    border-bottom: 3px solid #c40505;
+}
+/****/
+
+/*Estilização da seção de Serviços e Depoimentos*/
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.servicos{
+    background-color: rgb(31, 30, 30);
+    padding: 80px;
+}
+.depoimentos{
+    background-color: #F22929;
+    padding: 80px;
+}
+
+.titulo-sc{
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.servicos ul{
+    list-style-position: inside;
+    line-height: 170%;
+    margin-left: 10px;
+}
+
+.w50-container{
+    align-items: flex-end;
+}
+
+.botao-servicos{
+    margin-left: 40px;
+}
+
+.depoimentos p{
+    width: 90%;
+    line-height: 160%;
+}
+
+.depoimentos-bottom{
+    width: 90%;
+    height: 40px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.depoimentos-bottom span{
+    font-size: 14px;
+    color: rgb(31, 30, 30);
+}
+
+.icones{
+    width: 50px;
+    justify-content: space-between;
+    font-size: 28px;
+    color: #8b0909;
+    cursor: pointer;
+}
+
+/****/
+/*Estilização da seção de contato*/
+.contato{
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.contato form{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+.form100{
+    display: inline-block;
+    width: 100%;
+}
+
+.form50{
+    display: inline-block;
+    width: 49%;
+}
+
+.contato form input{
+    height: 40px;
+    padding: 15px;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.contato form textarea{
+    font-size: 18px;
+    padding: 15px;
+    font-style: italic;
+    height: 100px;
+    resize: none;
+    outline: none;
+}
+
+.contato form input[type="submit"]{
+    width: max-content;
+    text-transform: uppercase;
+    color: white;
+    padding: 8px 20px;
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: #F22929;
+    border: 0;
+    border-top: 3px solid #fc6565;
+    border-bottom: 3px solid #c40505;
+    cursor: pointer;
+}
+/****/
+
+/*Estilização da página "sobre nós"*/
+.sobre{
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.sobre .img-principal{
+    background-color: rgb(230, 230, 230);
+    background-image: none;
+    border: 0;
+}
+
+.sobre-loja{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.sobre-loja span{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.sobre-loja p{
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.sobre-autor{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.autor-img{
+   flex-shrink: 0;
+   width: 150px;
+   height: 150px;
+   background-color: rgb(230, 230, 230);
+   margin-right: 30px; 
+}
+/****/
+
+/*Estilização do footer*/
+footer{
+    width: 100%;
+    height: 80px;
+    padding: 0 80px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(31, 30, 30);
+}
+
+footer nav ul li a{
+    color: white !important;
+}
+
+footer span{
+    font-size: 14px;
+}
+/****/
+
+/*Estilização da seção de vendas*/
+.vendas{
+    width: 100%;
+    padding: 0 100px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.vendas .destaque-conteiner{
+    display: grid;
+    padding: 0;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.vendas .destaque-single{
+    width: 100%;
+}
+
+.bar{
+    height: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid grey;
+    margin-bottom: 5px;
+}
+.preenchimento{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(228, 228, 228);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.marcador{
+    height: 180%;
+    transform: translateY(-22%);
+    width: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-image: linear-gradient(rgb(228, 228, 228) 50%,rgb(173, 173, 173) 50%);
+}
+aside span{
+   font-weight: bold;
+   font-style: italic;
+   font-size: 20px;
+   margin-bottom: 10px; 
+}
+
+aside label{
+    font-style: italic;
+    font-size: 14px;
+}
+
+aside div{
+    margin-bottom: 5px;
+}
+
+aside input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(194, 194, 194);
+}
+.precos-limite{
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.precos-limite label{
+    font-size: 12px;
+}
+/****/
+/*Estilização da seção de eventos*/
+.eventos{
+    width: 100%;
+    padding: 0 100px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.eventos .eventos-conteiner{
+    display: grid;
+    padding: 0;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.eventos .eventos-single{
+    width: 100%;
+    font-style: italic;
+}
+
+.evento-img{
+    padding-top: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.eventos-single h5{
+    color:rgb(98, 98, 98);
+}
+
+.eventos-single span{
+    color: #F22929;
+}
+/****/
+/*Estilização da seção de Galeria*/
+.galeria-container{
+    width: 100%;
+    padding: 0 5%;
+    padding-bottom: 40px;
+}
+.img-principal{
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-top: 25%;
+    padding-bottom: 3%;
+    background-image: url('../imagens/galeria.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 8px solid rgb(168, 168, 168);
+    margin-bottom: 20px;
+}
+
+.galeria{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 23.4% 23.4% 23.4% 23.4%;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.img-galeria{
+    height: 100px;
+    background-color: rgb(168, 168, 168);
+}
+
+.img-principal span{
+    color: white;
+    background-color: #F22929;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 14px;
+    margin-right: -8px;
+}
+/****/
+
+/*Estilização da pagina single de venda*/
+.vs-container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.vs-imagens{
+    width: 60%;
+    align-items: center;
+}
+.img-grande{
+    width: 90%;
+    padding-top: 60%;
+    background-color: rgb(168, 168, 168);
+}
+
+.imgs-container{
+    width: 100%;
+    height: 180px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.img-pequena{
+    width: 165px;
+    height: 150px;
+    background-color: rgb(168, 168, 168);
+    border: 10px solid white;
+    cursor: pointer;
+}
+
+.img-pequena:hover{
+    transform: scale(1.1);
+}
+.vs-info{
+    width: 40%;
+    padding: 0 20px;
+    font-style: italic;
+}
+
+.vs-info h4{
+    color: rgb(168, 168, 168);
+}
+
+.vs-info p{
+    margin: 40px 0;
+}
+
+.vs-info .preco{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/****/
+
+/*Estilização da página single de evento(reaproveitando o estilo da página sobre)*/
+.info-link{
+    width: 100%;
+    color:rgb(98, 98, 98);
+    margin: 20px 0;
+}
+.info-link span{
+    margin: 0;
+}
+
+.info-link span b{
+    color: #F22929;
+}
+
+.info-link a{
+    text-decoration: none;
+    margin-top: 20px;
+    color: rgb(98, 98, 98);
+}
+/****/
+/*Design responsivo*/
+
+@media screen and (max-width: 900px){
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .menu-mobile ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-mobile a{
+        display: block;
+        padding: 10px 0;
+    }
+
+    .fas{
+        display: block !important;
+        font-size: 32px;
+    }
+    
+    .banner{
+        padding: 60px 60px;
+    }
+    .banner ul li{
+        padding: 5px 20px;
+        font-size: 22px;
+        transform: skew(-10deg);
+    }
+    .banner ul li:nth-of-type(4){
+        font-size: 14px;
+    }
+    .banner ul li:nth-of-type(3){
+        margin-left: 8px;
+    }
+    .banner ul li:nth-of-type(2){
+        margin-left: 16px;
+    }
+    .banner ul li:nth-of-type(1){
+        margin-left: 24px;
+    }
+
+    .titulo{
+        padding: 20px 5%;
+    }
+
+    .titulo h1{
+        font-size: 18px;
+    }
+
+    .destaques{
+        padding-bottom: 40px;
+    }
+
+    .destaque-conteiner{
+        width: 100%;
+        padding: 0 5%;
+     }
+
+     .destaque-single{
+        width: 30%;
+    }
+
+    .destaque-single h4{
+        font-size: 16px;
+    }
+    .destaque-single h5{
+        font-size: 14px;
+    }
+    .destaque-single a{
+        font-size: 14px;
+    }
+
+    .servicos-depoimentos{
+        flex-direction: column;
+    }
+    .w50{
+        width: 100%;
+    }
+
+    .form50{
+        width: 100%;
+    }
+    footer{
+        justify-content: center;
+    }
+    .vendas, .eventos{
+        padding: 0 40px;
+        grid-template-columns: 25% 75%;
+    }
+    .precos-limite label{
+        font-size: 12px;
+    }
+    .img-principal{
+        padding-top: 45%;
+        padding-bottom: 4%;
+    }
+
+    .sobre .img-principal{
+        padding-top: 35%;
+    }
+
+
+    .imgs-container{
+        padding: 14px;
+    }
+
+    .vs-info a{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .banner{
+        padding: 60px 40px;
+        padding-bottom: 220px;
+    }
+    .titulo h1{
+        text-align: center;
+    }
+
+    .destaques{
+        padding-bottom: 0;
+    }
+    .destaque-conteiner{
+        width: 100%;
+        flex-direction: column;
+        padding: 0 5%;
+     }
+
+     .destaque-single{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .servicos,.depoimentos{
+        padding: 20px 5%;
+    }
+    .titulo-sc{
+        font-size: 14px;
+    }
+    .w50-container{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    .depoimentos{
+        font-size: 14px;
+    }
+
+    footer{
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .vendas, .eventos{
+        width: 100%;
+        padding: 0 40px;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .vendas .destaque-conteiner{
+        display: grid;
+        padding: 0;
+        grid-template-columns: 100%;
+    }
+
+    .eventos .eventos-conteiner{
+        display: grid;
+        padding: 0;
+        grid-template-columns: 100%;
+    }
+
+    aside{
+        padding-bottom: 40px;
+    }
+    .precos-limite label{
+        font-size: 12px;
+    }
+
+    .galeria{
+        grid-template-columns: 48% 48%;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    .sobre{
+        padding: 0 10%;
+        padding-bottom: 40px;
+    }
+
+    .sobre .img-principal{
+        padding-top: 50%;
+    }
+
+    .sobre-autor{
+        flex-direction: column;
+    }
+
+    .autor-img{
+        align-self: center;
+        margin-bottom: 10px;
+    }
+
+    .vs-container{
+        flex-direction: column;    
+    }
+    .vs-imagens{
+        width: 100%;
+    }
+
+    .vs-info{
+        width: 100%;
+    }
+
+    .img-pequena{
+        height: 120px;
+    }
+}
